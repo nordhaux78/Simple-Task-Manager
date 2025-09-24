@@ -1,0 +1,74 @@
+Title,Body,Labels,Milestone
+"Collaboration: Share Task via CloudKit (CKShare)","**User Story**: As a manager, I can share a Task with other Apple IDs so we can collaborate.
+
+**Acceptance Criteria**
+- Share entry point from Task detail
+- Accepting invite shows Task + subtasks on recipient device
+
+**Effort/Risk**: L / High
+
+**Definition of Done**
+- Manual test plan: invite, accept, revoke
+- Error states for revoked access
+- Release note line prepared","area:sync,priority:P1,effort:L,risk:High,type:feature,pro","Phase C — Collaboration (Pro)"
+"Collaboration: Participant roles & permissions","**User Story**: As a manager, I assign participant roles (Manager, Approver, Contributor, Viewer) to control access.
+
+**Acceptance Criteria**
+- Only authorized roles can edit/approve
+- Role changes sync to all participants
+
+**Effort/Risk**: M / Med
+
+**Definition of Done**
+- Unit tests for permission checks
+- Clear UI labels for role badges
+- Release note line prepared","area:roles,priority:P1,effort:M,risk:Med,type:feature,pro","Phase C — Collaboration (Pro)"
+"Approvals: Delegation of Approver role (shared)","**User Story**: As a manager, I can delegate the Approver role to another participant for a shared task.
+
+**Acceptance Criteria**
+- Only Manager can delegate Approver
+- Approvals inbox respects delegated role
+
+**Effort/Risk**: M / Med
+
+**Definition of Done**
+- Unit tests for delegation transitions
+- Audit entries for delegation changes
+- Release note line prepared","area:approvals,priority:P1,effort:M,risk:Med,type:feature,pro","Phase C — Collaboration (Pro)"
+"Groups: Cloud groups with members (shared)","**User Story**: As a user, I can create shared groups and add members so managers can assign tasks to a whole group.
+
+**Acceptance Criteria**
+- Adding a member grants access to relevant shared tasks
+- Removing a member revokes access
+
+**Effort/Risk**: M / Med
+
+**Definition of Done**
+- Unit tests for membership changes
+- Group detail shows member list and roles
+- Release note line prepared","area:groups,priority:P1,effort:M,risk:Med,type:feature,pro","Phase C — Collaboration (Pro)"
+"Approvals: Audit trail (immutable entries)","**User Story**: As a participant, I can see an immutable audit trail for approvals (who, when, decision, comment).
+
+**Acceptance Criteria**
+- Approve/Reject entries are write-once
+- Visible in Activity log
+
+**Effort/Risk**: M / Med
+
+**Definition of Done**
+- Unit tests for immutability
+- Export includes audit metadata
+- Release note line prepared","area:approvals,priority:P1,effort:M,risk:Med,type:feature,pro","Phase C — Collaboration (Pro)"
+"Collaboration: Group invites & access propagation","**User Story**: As a manager, I can invite an entire group to a Task; members get access according to group role.
+
+**Acceptance Criteria**
+- Invite group adds members as participants or via shared group record
+- New members inherit group role permissions
+
+**Effort/Risk**: M / Med
+
+**Definition of Done**
+- Unit tests for group-to-task propagation
+- Clear error for partial failures
+- Release note line prepared","area:groups,priority:P1,effort:M,risk:Med,type:feature,pro","Phase C — Collaboration (Pro)"
+

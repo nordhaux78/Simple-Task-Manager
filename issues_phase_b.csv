@@ -1,0 +1,97 @@
+Title,Body,Labels,Milestone
+"Dashboard: Progress visuals (ring/bar)","**User Story**: As a user, I see a progress ring/bar on each category card so I can quickly gauge completion.
+
+**Acceptance Criteria**
+- Progress visual matches computed % within 1% rounding
+- Handles 0% and 100% gracefully
+
+**Effort/Risk**: S / Low
+
+**Definition of Done**
+- Snapshot test for visual mapping
+- VoiceOver announces percentage
+- Release note line prepared","area:dashboard,priority:P1,effort:S,risk:Low,type:feature","Phase B — Polish & Sync"
+"Subtasks: Drag-and-drop reorder","**User Story**: As a user, I can reorder subtasks via drag-and-drop so I can reflect real-world priority.
+
+**Acceptance Criteria**
+- Drag-and-drop changes `sortIndex`
+- New order persists across relaunch
+
+**Effort/Risk**: S / Low
+
+**Definition of Done**
+- Unit test for stable ordering
+- Handles long lists smoothly
+- Release note line prepared","area:subtasks,priority:P1,effort:S,risk:Low,type:feature","Phase B — Polish & Sync"
+"Lists: Sorting (due date, priority, progress)","**User Story**: As a user, I can sort task lists by due date, priority (later), or progress to focus my work.
+
+**Acceptance Criteria**
+- Sort option persists per view
+- Clear indicator of active sort
+
+**Effort/Risk**: S / Low
+
+**Definition of Done**
+- Unit tests for sort stability
+- Empty-state messaging covered
+- Release note line prepared","area:tasks,priority:P1,effort:S,risk:Low,type:feature","Phase B — Polish & Sync"
+"Sync: Background refresh (BGTaskScheduler)","**User Story**: As a user, my data refreshes in the background so changes sync without opening the app.
+
+**Acceptance Criteria**
+- Background task schedules and runs within system budget
+- Manual 'Sync now' triggers immediate attempt
+
+**Effort/Risk**: M / Med
+
+**Definition of Done**
+- Test plan for background triggers
+- Debug screen shows last sync time/status
+- Release note line prepared","area:sync,priority:P1,effort:M,risk:Med,type:feature","Phase B — Polish & Sync"
+"Sync: Conflict handling (merge & surface)","**User Story**: As a user, I don’t lose data when edits happen on two devices; simple conflicts resolve automatically, complex ones show a clear message.
+
+**Acceptance Criteria**
+- Most-recent-wins for notes
+- Subtasks merged by id; surface conflict when same field changed
+
+**Effort/Risk**: L / High
+
+**Definition of Done**
+- Unit tests for merge cases
+- UX for conflict banner/dialog
+- Release note line prepared","area:sync,priority:P1,effort:L,risk:High,type:feature","Phase B — Polish & Sync"
+"Notifications: Push for shared changes (prep)","**User Story**: As a participant in shared tasks (coming in Phase C), I receive notifications for relevant changes.
+
+**Acceptance Criteria**
+- App-level opt-in UI prepared
+- Local plumbing ready; remote hooks activated in Phase C
+
+**Effort/Risk**: M / Med
+
+**Definition of Done**
+- Settings toggle for shared notifications
+- Placeholder handling if user not in any share
+- Release note line prepared","area:notifications,priority:P1,effort:M,risk:Med,type:feature","Phase B — Polish & Sync"
+"Activity log: Per-task history","**User Story**: As a user, I can see a simple activity history for a task (created, edited, completed, approval events).
+
+**Acceptance Criteria**
+- Shows who/what/when (local identity for Phase B)
+- Sorted by newest first
+
+**Effort/Risk**: S / Low
+
+**Definition of Done**
+- Unit tests for logging hooks
+- Pagination or truncation for long histories
+- Release note line prepared","area:tasks,priority:P1,effort:S,risk:Low,type:feature","Phase B — Polish & Sync"
+"QA: TestFlight beta (internal & external)","**User Story**: As a team, we distribute builds to testers via TestFlight and collect feedback.
+
+**Acceptance Criteria**
+- Internal testers invited; at least one external build with release notes
+- Feedback loop documented
+
+**Effort/Risk**: S / Low
+
+**Definition of Done**
+- Build and upload instructions recorded
+- Checklist for tester scenarios included","area:qa,priority:P1,effort:S,risk:Low,type:test","Phase B — Polish & Sync"
+
